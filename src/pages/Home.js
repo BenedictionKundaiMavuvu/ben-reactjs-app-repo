@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { AppContext } from "../Components/Routing";
+import CatFact from "../Components/CatFact";
 
 export const Home = () => {
   const { username } = useContext(AppContext);
