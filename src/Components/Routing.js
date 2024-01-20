@@ -10,7 +10,9 @@ import CatFact from "../pages/CatFact";
 export const AppContext = createContext();
 
 const Routing = () => {
-  const client = new QueryClient();
+  const client = new QueryClient({
+    defaultOptions: { queries: { refetchOnWindowFocus: false } },
+  });
   const [username, setUsername] = useState("Benediction");
   return (
     <div>
